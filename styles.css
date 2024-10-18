@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e6eef0df;
+}
+
+/* Style for the main title */
+h1 {
+  font-size: 28px;
+  margin-bottom: 30px; /* Adds spacing between the title and the box */
+  color: #0d0c0c;
+  text-align: center;
+}
+
+.mainContainer {
+  width: 400px;
+  height: 600px; /* Extend the height of the container */
+  background-color: #afe7eb;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.searchInput {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.searchInput input {
+  padding: 10px;
+  width: 75%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.searchInput button {
+  background-color: #4caf50;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.weatherDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.weatherIcon img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.cityDetails {
+  margin-bottom: 20px;
+}
+
+.weather {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.desc {
+  font-size: 16px;
+  color: #435a75;
+}
+
+.windDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.humidityBox,
+.windSpeed {
+  display: flex;
+  align-items: center;
+}
+
+.humidityBox img,
+.windSpeed img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.humidity,
+#windSpeed {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.humidityBox span,
+.windSpeed span {
+  font-size: 14px;
+  color: #555;
+}
+
+.barGraph {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 25px;
+  position: relative;
+  margin: 10px 0;
+}
+
+.barGraph span {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #fff;
+}
+
+.humidityBar {
+  background-color: #3db2ff;
+  width: 60%; /* Example percentage, dynamically adjust based on humidity */
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+.tempBar {
+  background-color: #ff7f50;
+  width: 40%; /* Example percentage, dynamically adjust based on temperature */
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+/* Adjust input and button hover effects */
+.searchInput input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #4caf50;
+}
+
+.searchInput button:hover {
+  background-color: #45a049;
+}
